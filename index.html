@@ -15,7 +15,7 @@
 <body class="bg-black text-white">
   <header class="flex items-center justify-between px-5 lg:px-10 py-2 lg:py-3 bg-black">
     <h1 class="text-3xl font-bold">Renan <span class="text-purpleLight">Gabriel</span></h1>
-    <nav>
+    <nav class="flex items-center">
       <button
       id="menu-button"
       class="text-3xl lg:hidden focus:outline-none"
@@ -24,18 +24,19 @@
       ☰
     </button>
       <ul 
-      id="menu"
-      class="hidden absolute top-16 left-0 w-full bg-black flex-col items-center gap-5 p-5 lg:static lg:w-auto lg:flex lg:flex-row lg:bg-transparent lg:gap-7">
-        <li class="px-4 py-2 rounded-full cursor-pointer text-lg transform transition-all hover:bg-purpleDark duration-300  hover:scale-105 font-semibold">
-          <a href="#home" class="w-full h-full flex items-center justify-center">Home</a>
+        id="menu"
+        class="hidden absolute top-16 left-0 w-full bg-black flex-col items-center gap-5 p-5 lg:static lg:w-auto lg:flex lg:flex-row lg:bg-transparent lg:gap-7"
+      >
+        <li class="px-4 py-2 rounded-full cursor-pointer text-lg hover:bg-purpleDark duration-300">
+          <a href="#home" class="w-full h-full flex items-center justify-center font-medium">Home</a>
         </li>
-        <li class="px-4 py-2 rounded-full cursor-pointer text-lg transform transition-all hover:bg-purpleDark duration-300  hover:scale-105 font-semibold">
+        <li class="px-4 py-2 font-medium rounded-full cursor-pointer text-lg hover:bg-purpleDark duration-300">
           <a href="#skills" class="w-full h-full flex items-center justify-center">Skills</a>
         </li>
-        <li class="px-4 py-2 rounded-full cursor-pointer text-lg transform transition-all hover:bg-purpleDark duration-300  hover:scale-105 font-semibold">
+        <li class="px-4 py-2 font-medium rounded-full cursor-pointer text-lg hover:bg-purpleDark duration-300">
           <a href="#projects" class="w-full h-full flex items-center justify-center">Projects</a>
         </li>
-        <li class="px-4 py-2 rounded-full lg:hidden cursor-pointer text-lg transform transition-all hover:bg-purpleDark duration-300  hover:scale-105 font-semibold">
+        <li class="px-4 py-2 font-medium rounded-full lg:hidden cursor-pointer text-lg hover:bg-purpleDark duration-300">
           <a href="#contact" class="w-full h-full flex items-center justify-center">Contact</a>
         </li>
       </ul>
@@ -56,15 +57,28 @@
         </p>
         <div class="flex justify-center lg:justify-start gap-4 mt-4">
 
-          <a href="https://github.com/renelps" class="max-w-10 rounded-full border-none no-underline text-inherit">
+          <a 
+            href="https://github.com/renelps" 
+            class="max-w-10 rounded-full border-none no-underline text-inherit"
+            target="_blank"
+
+          >
             <img src="assets/img/icons/github (2).png" alt="iconGithub" class=" bg-white w-full h-full rounded-full">
           </a>
 
-          <a href="https://www.linkedin.com/in/renan-gabriel-2594702a4/" class="max-w-10 rounded-full no-underline text-inherit">
+          <a 
+            href="https://www.linkedin.com/in/renan-gabriel-2594702a4/" 
+            class="max-w-10 rounded-full no-underline text-inherit"
+            target="_blank"
+          >
             <img src="assets/img/icons/linkedin.png" alt="iconLinkedin" class=" bg-white w-full h-full rounded-full">
           </a>
 
-          <a href="https://www.instagram.com/_renan_olv/" class="max-w-10 rounded-full no-underline text-inherit">
+          <a 
+            href="https://www.instagram.com/_renan_olv/" 
+            class="max-w-10 rounded-full no-underline text-inherit"
+            target="_blank"
+          >
             <img src="assets/img/icons/instagram.png" alt="iconInstagram" class=" bg-white w-full h-full rounded-full">
           </a>
       </div>
@@ -120,18 +134,29 @@
 
     <section id="projects" class="py-20 mx-auto">
       <h2 class="text-2xl md:text-3xl font-bold text-center text-white mb-10">Projetos</h2>
-      <div class="overflow-x-auto xl:overflow-visible flex py-4 justify-start w-full">
-        <div class="flex flex-wrap items-center justify-center max-w-[1200px] gap-4 min-w-max xl:min-w-0 mx-auto">
+      <div class="overflow-x-auto xl:overflow-visible flex py-4 w-full">
+        <div class="flex gap-3 xl:grid xl:grid-cols-3 mx-auto">
+          <a href="https://github.com/renelps/devcontrole/" target="_blank">
+            <div class="w-64 h-80 lg:w-80 lg:h-96 border shadow-custom-white flex items-center justify-center text-white">
+              <img src="./assets/img/serviceDesk-pro.png" alt="serServiceDesk Pro" class="w-full h-full object-cover">
+            </div>
+          </a>
           <a href="https://github.com/renelps/projeto-pizzaria/" target="_blank">
             <div class="w-64 h-80 lg:w-80 lg:h-96 border shadow-custom-white flex items-center justify-center text-white">
-              <img src="./assets/img/projectpizzaria.png" alt="pizzaria" class="w-full h-full object-cover">
+              <img src="./assets/img/pizzeria-project-logo.png" alt="pizzaria" class="w-full h-full object-cover">
             </div>
           </a>
           <a href="https://projetowebcar.vercel.app/" target="_blank">
             <div class="w-64 h-80 lg:w-80 lg:h-96 border shadow-custom-white flex items-center justify-center text-white">
               <img src="assets/img/projectwebcars.png" alt="webcarros" class="w-full h-full object-cover">
             </div>
-          </a>          
+          </a>
+          
+          <a href="https://github.com/renelps/frontend-challenge" target="_blank">
+            <div class="w-64 h-80 lg:w-80 lg:h-96 border shadow-custom-white flex items-center justify-center text-white">
+              <img src="./assets/img/capputeeno.png" alt="capputeeno" class="w-full h-full object-cover">
+          </div>
+              
           <a href="https://prime-flix-sable-seven.vercel.app/" target="_blank">
             <div class="w-64 h-80 lg:w-80 lg:h-96 border shadow-custom-white flex items-center justify-center text-white">
               <img src="assets/img/project-primeflix.png" alt="primeflix" class="w-full h-full object-cover">
@@ -144,11 +169,6 @@
             </div>
           </a>
 
-          <a href="https://github.com/renelps/frontend-challenge" target="_blank">
-            <div class="w-64 h-80 lg:w-80 lg:h-96 border shadow-custom-white flex items-center justify-center text-white">
-              <img src="./assets/img/capputeeno.png" alt="capputeeno" class="w-full h-full object-cover">
-          </div>
-    
           <a href="https://projectcar-six.vercel.app/" target="_blank">
             <div class="w-64 h-80 lg:w-80 lg:h-96 border shadow-custom-white flex items-center justify-center text-white">
               <img src="assets/img/projectcar.jpeg" alt="car" class="w-full h-full object-cover">
