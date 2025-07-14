@@ -16,8 +16,8 @@ module.exports = {
         white: "#ffffff",
       },
       screens: {
-        'xs': '480px', // Breakpoint personalizado
-        '3xl': '1600px', // Outro exemplo
+        'xs': '480px',
+        '3xl': '1600px',
       },
     },
   },
