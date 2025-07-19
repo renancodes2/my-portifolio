@@ -903,6 +903,10 @@ video {
   max-width: 2.5rem;
 }
 
+.max-w-3xl {
+  max-width: 48rem;
+}
+
 .max-w-96 {
   max-width: 24rem;
 }
@@ -921,14 +925,6 @@ video {
 
 .max-w-lg {
   max-width: 32rem;
-}
-
-.max-w-xl {
-  max-width: 36rem;
-}
-
-.max-w-3xl {
-  max-width: 48rem;
 }
 
 .flex-shrink {
@@ -2051,6 +2047,11 @@ video {
 .object-scale-down {
   -o-object-fit: scale-down;
      object-fit: scale-down;
+}
+
+.object-center {
+  -o-object-position: center;
+     object-position: center;
 }
 
 .p-10 {
