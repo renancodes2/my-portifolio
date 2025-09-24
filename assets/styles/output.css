@@ -2293,6 +2293,11 @@ video {
   color: inherit;
 }
 
+.text-purple-900 {
+  --tw-text-opacity: 1;
+  color: rgb(88 28 135 / var(--tw-text-opacity, 1));
+}
+
 .text-purpleLight {
   --tw-text-opacity: 1;
   color: rgb(126 12 125 / var(--tw-text-opacity, 1));
